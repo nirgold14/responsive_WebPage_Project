@@ -1,0 +1,45 @@
+/* NavBar */
+
+.navbar {
+    justify-content: start;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.185);
+    padding-bottom: 0px;
+}
+
+ul.navbar-nav {
+    position: absolute;
+    left: 0;
+    margin-left: 15px;
+}
+
+.navbar-logo {
+    display: block;
+    margin: auto;
+    width: 143px;
+    height: 30px;
+}
+
+.nav_logo_text {
+    margin-right: 5px;
+    font-size: 15px;
+    line-height: 0.5;
+}
+
+li.nav-item {
+    border-right: 1px solid rgba(0, 0, 0, 0.205);
+}
+
+li.nav-item:first-child {
+    border: none;
+}
+
+a.nav-link {
+    color: black;
+    font-size: 90%;
+    transition: 1s;
+}
+
+a.nav-link:hover {
+    color: blueviolet;
+    font-size: 18px;
+}

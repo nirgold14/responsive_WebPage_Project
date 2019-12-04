@@ -1,0 +1,181 @@
+@import './navbarStyle.css';
+@import './testsCarousel.css';
+@import './sidebarStyle.css';
+@import './footerStyle.css';
+@import './mainWindowStyle.css';
+
+/* Main */
+
+.wide {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.underLine_header {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', 'Arial', 'sans-serif';
+    font-size: 17px;
+    color: white;
+    width: 70%;
+    border-bottom-style: double;
+    border-bottom-color: hotpink;
+    margin-bottom: 15px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text_paragraph {
+    color: whitesmoke;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.5rem;
+}
+
+
+/* Fonts Awesome */
+
+.fab {
+    margin: 10px;
+}
+
+.fa-facebook-square {
+    color: #3b5998;
+}
+
+.fa-google-plus-square,
+.fa-youtube-square {
+    color: #D44638;
+}
+
+.fab:hover {
+    cursor: pointer;
+}
+
+
+/* SM ~~ Tablets */
+
+@media(max-width: 992px) {
+    .sidebar_ul li a {
+        color: black;
+        text-decoration: none;
+        font-size: 10px;
+    }
+    .sidebar_ul li i {
+        margin-left: 0px;
+    }
+    .ex_Btn button {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .nav_logo_text {
+        display: none;
+    }
+    .sideBar_card:first-of-type {
+        border-top: 1px solid rgba(0, 0, 0, 0.342);
+    }
+    .ex_try_line {
+        /* padding-left: 0; */
+    }
+    .ex_try_line span {
+        display: flex;
+        justify-content: center;
+        font-size: 1;
+    }
+    #try_date {
+        margin-left: 10px;
+        margin-right: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #results_review_link {
+        text-align: center;
+    }
+}
+
+
+/* XS ~~ Phones */
+
+@media(max-width: 769px) {
+    /* Mobile NavBar */
+    ul.navbar-nav {
+        position: relative;
+        text-align: right;
+        padding-right: 20px;
+        width: 225px;
+    }
+    li.nav-item {
+        border: none;
+        border-top: 1px solid rgba(0, 0, 0, 0.205);
+        max-width: 150px;
+    }
+    a.plus_btn {
+        display: inline;
+    }
+    .chosen_subject_logo {
+        display: none;
+    }
+    #fourth_caroussle_item {
+        display: none;
+    }
+    .ex_Grades {
+        justify-content: space-evenly;
+        ;
+    }
+    .ex_Btn {
+        text-align: center;
+    }
+    .ex_try_line {
+        padding-right: 30px;
+    }
+    .chosen_Test_Container {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    #main_Chosen_Test_name {
+        padding-right: 10px;
+    }
+    .included_test_mainToggle {
+        padding-left: 10px;
+    }
+}
+
+
+/* COL ~~ Small Phones */
+
+@media(max-width: 576px) {
+    #chosen_subject_logo {
+        display: none;
+    }
+    a.plus_btn {
+        display: in;
+        float: left;
+    }
+}
+
+
+/* Width< 490px */
+
+@media(max-width: 490px) {
+    #progress_bar_img {
+        width: 160px;
+    }
+    #third_caroussle_item {
+        display: none;
+    }
+}
+
+
+/* Width< 377px */
+
+@media(max-width: 377px) {
+    .ex_try_line span {
+        font-size: 80px;
+    }
+    #try_num,
+    #try_date,
+    #try_grade,
+    #try_result {
+        font-size: 11px;
+    }
+}

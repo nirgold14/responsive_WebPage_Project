@@ -1,0 +1,83 @@
+/* Chosen Test carousel */
+
+.chosen_subject_container {
+    display: none;
+    background-color: rgba(224, 224, 224, 0.36);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.356);
+}
+
+.chosen_subject_rightCol {
+    padding: 10px;
+    text-align: right;
+}
+
+#nav_Chosen_Subject_name {
+    margin-top: 15px;
+}
+
+#nav_Chosen_Subject_name_bigger {
+    display: block;
+    margin-top: 15px;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.subjects_caroussle {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 25px;
+    text-align: center;
+}
+
+[data-TestStatus="done"] {
+    color: green
+}
+
+[data-TestStatus="not_finish"] {
+    color: rgb(224, 224, 77)
+}
+
+[data-TestStatus="not_started"] {
+    color: black;
+}
+
+.chosen_subject_logo {
+    padding-left: 0;
+    text-align: left;
+}
+
+.carousle-arrow {
+    cursor: pointer;
+    font-size: 25px;
+    margin: 10px;
+}
+
+.chosenSubject_test-item {
+    transition: 0.3s;
+    cursor: pointer;
+    font-size: 10px;
+}
+
+.chosenSubject_test-item:hover {
+    border-bottom-style: groove;
+    border-color: rgb(137, 185, 240);
+    font-size: 15px;
+}
+
+.chosenSubject_test-item-name {
+    padding-top: 8px;
+    min-width: 100px;
+}
+
+.chosen_subject_logo {
+    position: relative;
+}
+
+img#logo_stripes {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    height: 150px;
+    width: 150px;
+}

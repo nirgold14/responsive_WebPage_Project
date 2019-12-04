@@ -1,0 +1,562 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <!--Bootstrap mobile reponsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link href="./Images/fontsAwesome/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="./Styles/Style.css">
+
+    <title>Nir_Goldshmidt</title>
+</head>
+
+<body>
+    <div class="container-fluid wide">
+        <!-- NavBar -->
+        <nav class="navbar navbar-expand-md " dir='rtl'>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">&#9776</span>
+            </button>
+            <a class="navbar-brand" href="#"><img src="./Images/navBar_Logo.png" alt="Mahon_Logo" class='navbar-logo'></a>
+            <span class="nav_logo_text"> משנת 1992 </span>
+
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            ההכנות שלי
+                                        </a>
+                        <div class="dropdown-menu text-right" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#" data-CourseName='אדם מילא (צוערים לשירות המדינה)'>אדם מילא</a>
+                            <a class="dropdown-item" href="#" data-CourseName='פסיכומטרי'>פסיכומטרי</a>
+                            <a class="dropdown-item" href="#" data-CourseName='משטרה'>צוערים למשטרה</a>
+                        </div>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link " href="#">עזרה </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#"> ישראל ישראלי</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Chosen Test Sectoin -->
+        <div class="container-fluid chosen_subject_container">
+            <div class='row' dir='rtl'>
+                <div class='col-md-9 col-sm-12 chosen_subject_rightCol'>
+                    <span id='nav_Chosen_Subject_name'>ההכנות שלי // <b id='nav_Chosen_Test_name'>אדם מילא (צוערים
+                            לשירות המדינה)</b></span>
+                    <span id='nav_Chosen_Subject_name_bigger'> אדם מילא (צוערים לשירות המדינה)</span>
+                    <div class='subjects_caroussle'>
+                        <div class='carousle-arrow' id='right_arrow'>
+                            <i class="fas fa-arrow-circle-right 5x"></i>
+                        </div>
+                        <div class='chosenSubject_test-item' id='first_caroussle_item' data-subName='מבחני צורות'>
+                            <i class="fas fa-check-circle fa-3x" data-TestStatus="done"></i>
+                            <h6 class='chosenSubject_test-item-name'>מבחני צורות</h6>
+                        </div>
+                        <div class='chosenSubject_test-item' id='second_caroussle_item' data-subName='מבחנים כמותיים'>
+                            <i class="fas fa-check-circle fa-3x" data-TestStatus="done"></i>
+                            <h6 class='chosenSubject_test-item-name'>מבחנים כמותיים</h6>
+                        </div>
+                        <div class='chosenSubject_test-item' id='third_caroussle_item' data-subName='מבחנים טכניים'>
+                            <i class="fas fa-check-circle fa-3x" data-TestStatus="not_finish"></i>
+                            <h6 class='chosenSubject_test-item-name'>מבחנים טכניים</h6>
+                        </div>
+                        <div class='chosenSubject_test-item' id='fourth_caroussle_item' data-subName='מבחנים מילוליים'>
+                            <i class="fas fa-check-circle fa-3x" data-TestStatus="not_started"></i>
+                            <h6 class='chosenSubject_test-item-name'>מבחנים מילוליים</h6>
+                        </div>
+
+                        <div class='carousle-arrow' id='left_arrow'>
+                            <i class="fas fa-arrow-circle-left 5x"></i>
+                        </div>
+
+                    </div>
+                </div>
+                <div class='col-md-3 chosen_subject_logo'>
+                    <img src='./Images/chosen_subject_logo.png' id='logo_stripes'>
+                </div>
+            </div>
+        </div>
+
+        <!--Welcome Main Window -->
+        <div class='temp_mainWindow'>
+            <img src='./Images/temp_back.png' id='temp_backGround_img'>
+        </div>
+
+        <!-- Main Window -->
+        <div class="container-fluid mainWindow" data-ScreenName='mainWindow'>
+            <div class="row text-center" dir='rtl'>
+                <!-- Test Display Screen -->
+                <div class="col-md-9 col-xs-12 chosen_Test_Container">
+                    <h3 id='main_Chosen_Test_name'>מבחנים כמותיים</h3>
+
+                    <!-- Next Exercise Information-->
+                    <div class='next_exercise_section text-center' dir='rtl'>
+                        <h6>התרגול הבא:</h6>
+                        <h3 id='next_exercise_name'>חשבון: סדרות - רמה 1 גירסה 4</h3>
+                        <h6> 6:30<i class="far fa-clock 2x" style="display: inline;"> </i> דקות </h6>
+                        <button type="button" class="btn btn-danger" id='btn_start_exercise'>התחל תרגול</button>
+                    </div>
+
+                    <!-- Tests -->
+                    <div class="container-fluid Included_Tests_Container">
+                        <h5>
+                            <B>מבחנים כלולים בפרק זה:</B>
+                        </h5>
+
+                        <!-- Test -->
+                        <div class='Test_main_line' dir='rtl'>
+                            <div class='included_test_mainToggle'>
+                                <span style="display:inline-flex; align-items: baseline;">
+                                    <i class="fas fa-check-circle fa-2x" data-TestStatus="not_finish"></i>
+                                    <h6 id='test_name'><B>סדרות </B></h6>
+                                    <i class="fas fa-chevron-left" id='toggle_arrow' data-test_ID='1'></i>
+                                </span>
+                                <h6 class='amount_of_exercises_done'> תירגלת 3\2 תרגילים</h6>
+                            </div>
+                            <!-- Exercises -->
+                            <div class='exercises_Section' data-exercises_ID='1'>
+
+                                <!-- Ex -->
+                                <div class='container-fluid ex_container'>
+                                    <div class='row exercise_line'>
+                                        <div class='col-sm-12 col-md-4 ex_Details' style='display: inline-flex;'>
+                                            <i class="fas fa-check-circle fa-2x" data-TestStatus="done"></i>
+                                            <span class='span_ex_Details'>
+                                                <h6><B>חשבון: בעיות בחשבון (אחוזים) </B></h6>
+                                                <h6><B>סדרות רמה 1 גישה 3 </B></h6>
+                                            </span>
+                                        </div>
+                                        <div class='col-sm-12 col-md-5 ex_Grades' style='display: inline-flex; '>
+                                            <h6 class='ex_date_solved'>2018\07\12</h6>
+                                            <h6 class='ex_grade'>ציון: <b>7</b></h6>
+                                            <h6 class='ex_try_link' data-ex_ID='1'>עוד</a>
+                                        </div>
+                                        <div class='col-sm-12 col-md-3 ex_Btn'>
+                                            <button type="button" class="btn btn-danger ex_done" id='btn_start_exercise'>תרגל שוב</button>
+                                        </div>
+                                    </div>
+                                    <!-- Tries -->
+                                    <div class='container-fluid ex_tries_Section' data-tries_ID='1'>
+                                        <!-- Try -->
+                                        <div class='row ex_try_line'>
+                                            <div class='col-8 col-md-9 col-sm-6 '>
+                                                <div class='row try_data_row' style="align-items: baseline;">
+                                                    <div class='col-lg-7 col-md-12'>
+                                                        <span>
+                                                            <h6 id='try_num'>#3</h6>
+                                                            <h6 id='try_date'>11/08/2016</h6>
+                                                            <h6 id='try_grade'>ציון: <b> 4</b></h6>
+                                                        </span>
+                                                    </div>
+                                                    <div class='col-lg-5 col-md-12 text-center'>
+                                                        <img id='progress_bar_img' src='./Images/progress_bar.png'>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class='col-4 col-md-3 col-sm-6' id='results_review_link'>
+                                                <a href='' id='try_result'>דו"ח תוצאות</a>
+                                            </div>
+                                        </div>
+                                        <!-- Try -->
+                                        <div class='row ex_try_line'>
+                                            <div class='col-8 col-md-9 col-sm-6 '>
+                                                <div class='row try_data_row' style="align-items: baseline;">
+                                                    <div class='col-lg-7 col-md-12'>
+                                                        <span>
+                                                                <h6 id='try_num'>#3</h6>
+                                                                <h6 id='try_date'>11/08/2016</h6>
+                                                                <h6 id='try_grade'>ציון: <b> 4</b></h6>
+                                                            </span>
+                                                    </div>
+                                                    <div class='col-lg-5 col-md-12 text-center'>
+                                                        <img id='progress_bar_img' src='./Images/progress_bar.png'>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class='col-4 col-md-3 col-sm-6' id='results_review_link'>
+                                                <a href='' id='try_result'>דו"ח תוצאות</a>
+                                            </div>
+                                        </div>
+                                        <!-- Try -->
+                                        <div class='row ex_try_line'>
+                                            <div class='col-8 col-md-9 col-sm-6 '>
+                                                <div class='row try_data_row' style="align-items: baseline;">
+                                                    <div class='col-lg-7 col-md-12'>
+                                                        <span>
+                                                                <h6 id='try_num'>#3</h6>
+                                                                <h6 id='try_date'>11/08/2016</h6>
+                                                                <h6 id='try_grade'>ציון: <b> 4</b></h6>
+                                                            </span>
+                                                    </div>
+                                                    <div class='col-lg-5 col-md-12 text-center'>
+                                                        <img id='progress_bar_img' src='./Images/progress_bar.png'>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class='col-4 col-md-3 col-sm-6' id='results_review_link'>
+                                                <a href='' id='try_result'>דו"ח תוצאות</a>
+                                            </div>
+                                        </div>
+                                        <!-- Try -->
+                                        <div class='row ex_try_line'>
+                                            <div class='col-8 col-md-9 col-sm-6 '>
+                                                <div class='row try_data_row' style="align-items: baseline;">
+                                                    <div class='col-lg-7 col-md-12'>
+                                                        <span>
+                                                                <h6 id='try_num'>#3</h6>
+                                                                <h6 id='try_date'>11/08/2016</h6>
+                                                                <h6 id='try_grade'>ציון: <b> 4</b></h6>
+                                                            </span>
+                                                    </div>
+                                                    <div class='col-lg-5 col-md-12 text-center'>
+                                                        <img id='progress_bar_img' src='./Images/progress_bar.png'>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class='col-4 col-md-3 col-sm-6' id='results_review_link'>
+                                                <a href='' id='try_result'>דו"ח תוצאות</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Ex -->
+                                <div class='container-fluid ex_container'>
+                                    <div class='row exercise_line'>
+                                        <div class='col-sm-12 col-md-4 ex_Details' style='display: inline-flex;'>
+                                            <i class="fas fa-check-circle fa-2x" data-TestStatus="done"></i>
+                                            <span class='span_ex_Details'>
+                                                    <h6><B>חשבון: בעיות בחשבון (אחוזים) </B></h6>
+                                                    <h6><B>סדרות רמה 1 גישה 3 </B></h6>
+                                                </span>
+                                        </div>
+                                        <div class='col-sm-12 col-md-5 ex_Grades' style='display: inline-flex; '>
+                                            <h6 class='ex_date_solved'>2018\07\12</h6>
+                                            <h6 class='ex_grade'>ציון: <b>7</b></h6>
+                                            <h6 class='ex_try_link' data-ex_ID='2'>עוד</a>
+                                        </div>
+                                        <div class='col-sm-12 col-md-3 ex_Btn'>
+                                            <button type="button" class="btn btn-danger ex_done" id='btn_start_exercise'>תרגל שוב</button>
+                                        </div>
+                                    </div>
+                                    <!-- Tries -->
+                                    <div class='container-fluid ex_tries_Section' data-tries_ID='2'>
+                                        <!-- Try -->
+                                        <div class='row ex_try_line'>
+                                            <div class='col-8 col-md-9 col-sm-6 '>
+                                                <div class='row try_data_row' style="align-items: baseline;">
+                                                    <div class='col-lg-7 col-md-12'>
+                                                        <span>
+                                                                <h6 id='try_num'>#3</h6>
+                                                                <h6 id='try_date'>11/08/2016</h6>
+                                                                <h6 id='try_grade'>ציון: <b> 4</b></h6>
+                                                            </span>
+                                                    </div>
+                                                    <div class='col-lg-5 col-md-12 text-center'>
+                                                        <img id='progress_bar_img' src='./Images/progress_bar.png'>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class='col-4 col-md-3 col-sm-6' id='results_review_link'>
+                                                <a href='' id='try_result'>דו"ח תוצאות</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Ex -->
+                                <div class='container-fluid ex_container'>
+                                    <div class='row exercise_line'>
+                                        <div class='col-sm-12 col-md-4 ex_Details' style='display: inline-flex;'>
+                                            <i class="fas fa-check-circle fa-2x" data-TestStatus="not_done"></i>
+                                            <span class='span_ex_Details'>
+                                                    <h6><B>חשבון: בעיות בחשבון (אחוזים) </B></h6>
+                                                    <h6><B>סדרות רמה 1 גישה 3 </B></h6>
+                                                </span>
+                                        </div>
+                                        <div class='col-sm-12 col-md-5 ex_Grades' style='display: inline-flex; '>
+                                            <h6 class='ex_date_solved'>2018\07\12</h6>
+                                            <h6 class='ex_grade'>ציון: <b>7</b></h6>
+                                            <h6 class='ex_try_link' data-ex_ID='3'>עוד</a>
+                                        </div>
+                                        <div class='col-sm-12 col-md-3 ex_Btn'>
+                                            <button type="button" class="btn btn-danger ex_not_done" id='btn_start_exercise'>התחל תרגול</button>
+                                        </div>
+                                    </div>
+                                    <!-- Tries -->
+                                    <div class='container-fluid ex_tries_Section' data-tries_ID='3'>
+                                        <!-- Try -->
+                                        <div class='row ex_try_line'>
+                                            <div class='col-8 col-md-9 col-sm-6 '>
+                                                <div class='row try_data_row' style="align-items: baseline;">
+                                                    <div class='col-lg-7 col-md-12'>
+                                                        <span>
+                                                                <h6 id='try_num'>#3</h6>
+                                                                <h6 id='try_date'>11/08/2016</h6>
+                                                                <h6 id='try_grade'>ציון: <b> 4</b></h6>
+                                                            </span>
+                                                    </div>
+                                                    <div class='col-lg-5 col-md-12 text-center'>
+                                                        <img id='progress_bar_img' src='./Images/progress_bar.png'>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class='col-4 col-md-3 col-sm-6' id='results_review_link'>
+                                                <a href='' id='try_result'>דו"ח תוצאות</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- Test -->
+                        <div class='Test_main_line' dir='rtl'>
+                            <div class='included_test_mainToggle'>
+                                <span style="display:inline-flex; align-items: baseline;">
+                                            <i class="fas fa-check-circle fa-2x" data-TestStatus="done"></i>
+                                            <h6 id='test_name'><B>הסקה כמותית </B></h6>
+                                            <i class="fas fa-chevron-left" id='toggle_arrow' data-test_ID='2'></i>
+                                        </span>
+                                <h6 class='amount_of_exercises_done'> תירגלת 1\1 תרגילים</h6>
+                            </div>
+                            <!-- Exercises -->
+                            <div class='exercises_Section' data-exercises_ID='2'>
+
+                                <!-- Ex -->
+                                <div class='container-fluid ex_container'>
+                                    <div class='row exercise_video_line'>
+                                        <div class='col-sm-12 col-md-4 ex_Details' style='display: inline-flex;'>
+                                            <i class="fas fa-film" data-TestStatus="done"></i>
+                                            <span class='span_ex_Details'>
+                                                        <h6><B> וידאו הדרכה 1 </B></h6>                                                      
+                                                    </span>
+                                        </div>
+                                        <div class='col-sm-12 col-md-3 ex_Btn'>
+                                            <button type="button" class="btn btn-danger ex_done" id='btn_start_exercise'>צפה שוב</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+
+                <!-- Side Bar -->
+                <div class="col-md-3 col-xs-12 Tests_sideBar">
+                    <!-- Stars Bar -->
+                    <div class='card sideBar_card' id="sidebar_rateMe">
+                        <h6 class='card-title'>משוב</h6>
+                        <div class='stars_container'>
+                            <i class="far fa-star" id="star1" data-starid="1"></i>
+                            <i class="far fa-star" id="star2" data-starid="2"></i>
+                            <i class="far fa-star" id="star3" data-starid="3"></i>
+                            <i class="far fa-star" id="star4" data-starid="4"></i>
+                            <i class="far fa-star" id="star5" data-starid="5"></i>
+                        </div>
+                        <br>
+                        <h6 id="starsTnxMsg">תודה על המשוב!</h6>
+                    </div>
+                    <!-- Dear Customers -->
+                    <div class='card sideBar_card' id="sidebar_dearCustomers">
+                        <h6 class='card-title'>לקוחות יקרים:</h6>
+                        <p class='text_paragraph ' style='color: #000;'>טקסט רנדומלי בעברית שמדמה את לורם איפסם טקסט רנדומלי בעברית שמדמה את לורם איפסם טקסט רנדומלי בעברית שמדמה את לורם איפסם טקסט רנדומלי בעברית שמדמה את לורם איפסם טקסט רנדומלי בעברית שמדמה את לורם איפסם </p>
+                    </div>
+                    <!-- Extra Files -->
+                    <div class='card sideBar_card' id="sidebar_extraFiles">
+                        <h6 class='card-title'>קבצי עזר</h6>
+                        <ul class="sidebar_ul">
+                            <li>
+                                <i class="fas fa-film"></i>
+                                <a href='/#'>וידאן הדרכה 1</a>
+                            </li>
+                            <li>
+                                <i class="fas fa-film"></i>
+                                <a href='#'>וידאו הדרכה 2</a>
+                            </li>
+                            <li>
+                                <i class="far fa-file" style='width: 16px;'></i>
+                                <a href='#'>קובץ הדרכה 1 (קריאה)</a>
+                            </li>
+                        </ul>
+                        <a href='#' id='extraFiles'>לכל קבצי העזר</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class='container-fluid footer-section'>
+            <div class="row logo_margin_row" dir='rtl'><img id='footer_Logo' src="Images/footer_Logo.png"></div>
+
+            <div class="row footer_Content" dir='rtl'>
+                <div class="col-md-4 offset-md-1 col-xs-12">
+                    <div class="card footer_card" id="footerAbout">
+                        <span class="underLine_header">מכון נועם</span>
+                        <p class="text_paragraph">מכון נועם בע”מ נוסד בשנת 1992, והוא המכון הראשון, המקצועי והגדול בישראל בתחום הכנה למבחני מיון לעבודה. המכון הוקם על ידי מר דוד משולם בעל תואר שני בפסיכולוגיה מאוניברסיטת תל אביב. דוד בוגר בית הספר לפיקוד ומטה של חיל האוויר האמריקני,
+                            טייס ומפקד טייסת בחיל האוויר בשנים 1989-1970.</p>
+                    </div>
+                </div>
+                <div class="col-md-2 col-s-12">
+                    <div class="card footer_card">
+                        <span class="underLine_header">
+                            החברה
+                            <a class="plus_btn" data-toggle="collapse" href="#collapse1" role="button">+</a>
+                        </span>
+                        <ul class="footer_ul " id="collapse1">
+                            <li>אודות</li>
+                            <li>פרטיות</li>
+                            <li>זכויות יוצרים</li>
+                            <li>סיפורי הצלחה</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-2 md-of col-s-12">
+                    <div class="card footer_card">
+                        <span class="underLine_header">
+                            עזרה
+                            <a class="plus_btn" data-toggle="collapse" href="#collapse2" role="button">+</a>
+                        </span>
+                        <ul class="footer_ul" id="collapse2">
+                            <li>צור קשר</li>
+                            <li>מדיניות החזרים</li>
+                            <li>תנאים</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-2 col-s-12">
+                    <div class="card footer_card">
+                        <span class="underLine_header">
+                            שיתופי פעולה
+                            <a class="plus_btn" data-toggle="collapse" href="#collapse3" role="button">+</a>
+                        </span>
+                        <ul class="footer_ul" id="collapse3">
+                            <li>תוכנית שותפים</li>
+                            <li>מגייסים</li>
+                            <li>אוניברסיטאות</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row footer_Contact">
+                <div class='col-sm-12 text-center'>
+                    <i class="fab fa-facebook-square fa-3x"></i>
+                    <i class="fab fa-google-plus-square fa-3x"></i>
+                    <i class="fab fa-youtube-square fa-3x"></i>
+                </div>
+
+            </div>
+
+        </footer>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function() {
+
+
+            //Toggle Chosen course window when a course is chosen
+            $("[data-CourseName]").click(function() {
+                    var CourseName = $(this).attr('data-CourseName');
+
+                    $('#nav_Chosen_Subject_name_bigger').html(CourseName)
+                    $('.chosen_subject_container').show();
+                })
+                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                //Toggle Main Screen When a subject is chosen
+            $("[id*=_caroussle_item]").click(function() {
+                    var subjectName = $(this).attr('data-subName');
+                    $('.temp_mainWindow').hide();
+                    $('#main_Chosen_Test_name').html(subjectName)
+                    $('.mainWindow').show();
+                })
+                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                //Toggle Tries
+            var isTriesOpen = false;
+            $("[data-ex_ID]").click(function() {
+                    var exID = $(this).attr('data-ex_ID');
+                    if (!isTriesOpen) {
+                        $("[data-tries_ID=" + exID + "]").show();
+                        $(this).html('סגור')
+                        isTriesOpen = true;
+                    } else {
+                        $("[data-tries_ID=" + exID + "]").hide();
+                        $(this).html('עוד')
+                        isTriesOpen = false;
+                    }
+                })
+                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                //Toggle Exercises
+            $("[id='toggle_arrow']").click(function() {
+                    var testID = $(this).attr('data-test_ID');
+                    if ($(this).hasClass('fa-chevron-left')) {
+                        $(this).removeClass('fa-chevron-left').addClass('fa-chevron-down');
+                        $(".exercises_Section[data-exercises_ID=" + testID + "]").show();
+
+                    } else {
+                        $(this).removeClass('fa-chevron-down').addClass('fa-chevron-left');
+                        $(".exercises_Section[data-exercises_ID=" + testID + "]").hide();
+                    }
+                })
+                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                //Stars Rate
+            var alreadyVoted = false;
+            // ~~~ stars paint when hover
+            $("[id^=star]").hover(function() {
+                    if (!alreadyVoted) {
+                        var starId = $(this).attr('data-starid');
+                        for (var i = starId; i > 0; i--) {
+                            $('#star' + i).toggleClass('fas', 'far', 200000)
+                        }
+                    }
+
+                })
+                // ~~~ stars paint when click + thank you message
+            $("[id^=star]").click(function() {
+                    if (!alreadyVoted) {
+                        alreadyVoted = true;
+                        var starId = $(this).attr('data-starid');
+                        for (var i = starId; i > 0; i--) {
+                            $('#star' + i).removeClass('far').addClass('fas');
+                        }
+                        $('#starsTnxMsg').show();
+                    }
+
+                })
+                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+            //footer ul lists collapse when going mobile
+            $(window).resize(function() {
+                if (window.innerWidth <= 768) $('.footer_ul').addClass('collapse');
+                else $('.footer_ul').removeClass('collapse');
+            });
+
+            // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        });
+    </script>
+</body>
+
+</html>

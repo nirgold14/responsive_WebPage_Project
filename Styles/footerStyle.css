@@ -1,0 +1,66 @@
+/* Footer */
+
+.footer-section {
+    position: relative;
+    border: white;
+    bottom: 0;
+    background-color: rgb(73, 72, 72);
+}
+
+.logo_margin_row {
+    background: linear-gradient(to top, rgb(73, 72, 72) 45%, white 50%);
+    border: none;
+}
+
+#footer_Logo {
+    position: relative;
+    right: 30px;
+    height: 50px;
+}
+
+.footer_Content {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-right: 20px;
+}
+
+.footer_card {
+    text-align: right;
+    min-width: 150px;
+    padding: 5px;
+    margin-bottom: 10px;
+    background-color: transparent;
+    border: none;
+    color: white;
+}
+
+#footerAbout {
+    min-width: 100px;
+}
+
+footer ul {
+    text-align: right;
+    text-decoration: none;
+    list-style: none;
+    padding: 5px;
+    min-width: 120px;
+    font-weight: 400;
+    ;
+}
+
+.footer_ul li {
+    line-height: 2rem;
+}
+
+.footer_ul li:hover {
+    color: greenyellow;
+    cursor: pointer;
+}
+
+a.plus_btn {
+    display: none;
+    float: left;
+    font-size: 20px;
+    text-decoration: none;
+    color: rgb(104, 134, 158);
+}

@@ -1,0 +1,177 @@
+/* Main Window */
+
+.temp_mainWindow {
+    display: flex;
+    justify-content: center;
+    min-height: 250px;
+    padding: 20px;
+}
+
+#temp_backGround_img {
+    width: 80%;
+    border: 2px solid black;
+    border-radius: 20px;
+    box-shadow: 12px 8px 2px black;
+}
+
+.mainWindow {
+    display: none;
+    margin-top: 10px;
+}
+
+.Tests_rightScreen {
+    border-left: 1px solid rgba(0, 0, 0, 0.26);
+    min-height: 300px;
+}
+
+
+/* Chosen Test */
+
+.chosen_Test_Container {
+    padding: 25px
+}
+
+#main_Chosen_Test_name {
+    text-align: right;
+    font-weight: 700;
+}
+
+.next_exercise_section {
+    margin-top: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: rgba(224, 224, 224, 0.36);
+}
+
+#btn_start_exercise {
+    margin-top: 15px;
+}
+
+.Included_Tests_Container {
+    margin-top: 30px;
+    text-align: right;
+    margin-bottom: 20px;
+    padding-left: 0;
+}
+
+.included_test_mainToggle {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    border-bottom: 1px solid rgba(53, 47, 47, 0.308);
+}
+
+.included_test_mainToggle span {
+    margin: 10px;
+}
+
+#test_name {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#toggle_arrow {
+    cursor: pointer;
+}
+
+
+/* Exercises */
+
+.exercises_Section {
+    display: none;
+    margin-top: 25px;
+    transition: 2s;
+}
+
+.exercise_line,
+.exercise_video_line {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    border-bottom: 1px solid rgba(53, 47, 47, 0.308);
+    margin-top: 10px;
+}
+
+.ex_tries_Section {
+    display: none;
+    padding-right: 10px;
+    background-color: rgba(224, 224, 224, 0.36);
+}
+
+.ex_try_line {
+    align-items: baseline;
+    padding-top: 15px;
+    padding-right: 60px;
+    padding-left: 10px;
+    border-bottom: 1px solid rgba(53, 47, 47, 0.308);
+}
+
+.ex_try_line span {
+    display: flex;
+    justify-content: space-between;
+}
+
+#try_date {
+    padding-left: 20px;
+    padding-right: 20px;
+    border-left: 1px solid rgba(53, 47, 47, 0.308);
+    border-right: 1px solid rgb(53, 47, 47, 0.308);
+}
+
+#progress_bar_img {
+    width: 200px;
+}
+
+#results_review_link {
+    text-align: left;
+    padding-left: 0;
+}
+
+.ex_container {
+    padding-left: 0;
+}
+
+.ex_Details span {
+    text-align: right;
+    margin-right: 10px;
+    margin-bottom: 8px;
+}
+
+.exercise_video_line {
+    margin-right: 20px;
+}
+
+.ex_Grades {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ex_grade {
+    padding-right: 25px;
+    border-right: 1px solid rgb(53, 47, 47, 0.308);
+}
+
+.ex_try_link {
+    cursor: pointer;
+    color: blue;
+}
+
+.ex_Btn {
+    text-align: left;
+}
+
+.ex_Btn button {
+    margin: 10px;
+}
+
+.ex_done {
+    color: red;
+    background-color: white;
+    ;
+}
+
+.ex_done:focus {
+    color: red;
+    background-color: white;
+}
